@@ -30,7 +30,10 @@ export default {
     //     console.log(data);
 
     // normalement j'aurais ajouté le résultat de l'appel à l'api (data)
-    this.$store.dispatch("setEvents", "bonjour");
+    this.$store.dispatch(
+      "setEvents",
+      "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
+    );
     //   });
   },
 };
