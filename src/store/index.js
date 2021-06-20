@@ -9,8 +9,8 @@ export default createStore({
     setDates(state, dates) {
       state.dates = dates;
     },
-    setEvents(state, events) {
-      state.events = events;
+    setEvents(state, event) {
+      state.events.push(event);
     },
   },
   actions: {
@@ -30,9 +30,8 @@ export default createStore({
       }
       commit("setDates", dates);
     },
-    setEvents({ commit, state }, events) {
-      console.log(events);
-      commit("setEvents", events);
+    setEvents({ commit, state }, event) {
+      commit("setEvents", event);
     },
   },
   modules: {},

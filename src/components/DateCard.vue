@@ -23,20 +23,15 @@ export default {
   },
 
   mounted() {
-    for (let i = 0; i < this.dates.length; i++) {
-      // appel à l'api renvoie une erreur de JSON
-      // fetch("http://numbersapi.com/random/date")
-      //   .then((response) => response.json())
-      //   .then(function(data) {
-      //     console.log(response);
-      //   });
+    // appel à l'api renvoie une erreur de syntax JSON (et je n'ai pas su quoi faire)
+    // fetch("http://numbersapi.com/random/date")
+    //   .then((response) => response.json())
+    //   .then(function(data) {
+    //     console.log(data);
 
-      // normalement j'aurais ajouté le résultat de l'appel à l'api
-      this.fetchedEvents.push(
-        "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
-      );
-    }
-    this.$store.dispatch("setEvents", this.fetchedEvents);
+    // normalement j'aurais ajouté le résultat de l'appel à l'api (data)
+    this.$store.dispatch("setEvents", "bonjour");
+    //   });
   },
 };
 </script>
